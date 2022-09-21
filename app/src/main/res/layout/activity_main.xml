@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E800E5FF"
+    android:backgroundTintMode="src_in"
+    tools:context=".Registration.RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="180dp"
+        android:fontFamily="cursive"
+        android:text="Registration"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="266dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/nameText"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/turquoise"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Name"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/nameErr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CF3131" />
+
+        <EditText
+            android:id="@+id/surnameText"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/turquoise"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Surname"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/surnameErr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CF3131" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dateOfBirthText"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:background="@color/turquoise"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Date of birth"
+                android:includeFontPadding="false"
+                android:inputType="date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="64dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:onClick="clickInDate"
+                android:scaleY="1.28"
+                android:text="Button"
+                android:translationY="-11dp"
+                app:icon="@android:drawable/ic_menu_month" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dateOfBirthErr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CF3131" />
+
+        <EditText
+            android:id="@+id/passwordText"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/turquoise"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Password"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/passwordErr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CF3131" />
+
+        <EditText
+            android:id="@+id/confirmPasswordText"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/turquoise"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Confirm Password"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/confirmPasswordErr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CF3131" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Primary"
+        android:layout_width="216dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/turquoise"
+        android:fontFamily="serif"
+        android:onClick="clickInRegistration"
+        android:text="Registration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#679A95"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button1"-->
+    <!--        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Surface"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="146dp"-->
+    <!--        android:layout_marginEnd="146dp"-->
+    <!--        android:layout_marginBottom="112dp"-->
+    <!--        android:background="#8503DAC5"-->
+    <!--        android:backgroundTint="#8503DAC5"-->
+    <!--        android:backgroundTintMode="screen"-->
+    <!--        android:fontFamily="serif"-->
+    <!--        android:onClick="clickInRegistration"-->
+    <!--        android:text="Registartion"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:icon="@color/teal_200"-->
+    <!--        app:iconTint="#00FFFFFF"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
